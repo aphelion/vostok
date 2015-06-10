@@ -1,0 +1,39 @@
+$include-html-global-classes: false
+@import 'foundation/components/global'
+
+body
+  background-color: #283e38
+
+#home
+  > *
+    position: absolute
+  img
+    width: 100%
+  .contact-area
+    text-align: center
+    background-color: white
+    min-height: 50vh
+    padding: 2rem
+    &.row
+      max-width: 100%
+      box-sizing: border-box
+
+      @media #{$medium-up}
+        display: table
+
+        > .columns
+          display: table-cell
+          vertical-align: middle
+
+        > .columns, > [class*="column"] + [class*="column"]:last-child
+          float: none
+
+      @media #{$small-only}
+        .columns
+          margin-top: 2em
+
+    > .columns
+      display: inline-block
+      vertical-align: middle
+
+

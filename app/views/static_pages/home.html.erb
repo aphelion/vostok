@@ -1,2 +1,87 @@
-<h1>StaticPages#home</h1>
-<p>Find me in app/views/static_pages/home.html.erb</p>
+<section id="home">
+  <%= image_tag 'home/space-background.png', id: 'space-background', draggable: false %>
+  <div>
+    <%= image_tag 'home/spaceships-blue-spacer.png', id: 'spaceships-blue-spacer', draggable: false %>
+    <%= image_tag 'home/spaceships-blue.png', id: 'spaceships-blue', draggable: false %>
+  </div>
+  <div>
+    <%= image_tag 'home/planet-small-spacer.png', id: 'planet-small-spacer', draggable: false %>
+    <%= image_tag 'home/planet-small.png', id: 'planet-small', draggable: false %>
+  </div>
+  <div>
+    <%= image_tag 'home/planet-large-spacer.png', id: 'planet-large-spacer', draggable: false %>
+    <%= image_tag 'home/planet-large.png', id: 'planet-large', draggable: false %>
+  </div>
+  <%= image_tag 'home/mid-asset.png', draggable: false %>
+  <div>
+    <%= image_tag 'home/spaceships-orange-spacer.png', id: 'spaceships-orange-spacer', draggable: false %>
+    <%= image_tag 'home/spaceships-orange.png', id: 'spaceships-orange', draggable: false %>
+  </div>
+  <div>
+    <%= image_tag 'home/asteroids-spacer.png', id: 'asteroids-spacer', draggable: false %>
+    <%= image_tag 'home/asteroids.png', id: 'asteroids', draggable: false %>
+  </div>
+  <div>
+    <%= image_tag 'home/white-arrow-spacer.png', id: 'white-arrow-spacer', draggable: false %>
+    <%= image_tag 'home/white-arrow.png', id: 'white-arrow', draggable: false %>
+    <div class="row full-width contact-area">
+      <div class="large-6 columns"><%= image_tag 'aphelion-logo.png' %></div>
+      <div class="large-3 columns">
+        <div class="center-vertical">
+          <div class="text"><strong>Devan Bowers</strong></div>
+          <div>Creative Director</div>
+          <div><a href="mailto:dbowers@aphelion.io">dbowers@aphelion.io</a></div>
+        </div>
+      </div>
+      <div class="large-3 columns">
+        <div class="center-vertical">
+          <div class="text"><strong>Leonhardt Koepsell</strong></div>
+          <div>Engineering Director</div>
+          <div><a href="mailto:leonhardt@aphelion.io">leonhardt@aphelion.io</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <%= image_tag 'home/aphelion-orange.png', draggable: false %>
+</section>
+<script>
+    var controller = new ScrollMagic.Controller();
+    var sceneSpaceBackground = new ScrollMagic.Scene({
+        triggerElement: "#space-background",
+        triggerHook: 0,
+        duration: "200%"
+    })
+            .setTween("#space-background", {y: "5%"})
+            .addTo(controller);
+    var sceneSpaceshipsBlue = new ScrollMagic.Scene({
+        triggerElement: "#spaceships-blue-spacer",
+        triggerHook: 0,
+        duration: "100%"
+    })
+            .setTween("#spaceships-blue", {y: "-60%"})
+            .addTo(controller);
+    var scenePlanetLarge = new ScrollMagic.Scene({
+        triggerElement: "#planet-large-spacer",
+        triggerHook: 0,
+        duration: "100%"
+    })
+            .setTween("#planet-large", {scale: 1.1})
+            .addTo(controller);
+    var scenePlanetSmall = new ScrollMagic.Scene({
+        triggerElement: "#planet-small-spacer",
+        triggerHook: 0,
+        duration: "50%"
+    })
+            .setTween("#planet-small", {scale: 0.9, x: "2%"})
+            .addTo(controller);
+    var sceneSpaceshipsOrange = new ScrollMagic.Scene({
+        triggerElement: "#spaceships-orange",
+        triggerHook: 1,
+        duration: "300%"
+    })
+            .setTween("#spaceships-orange", {y: "-60%"})
+            .addTo(controller);
+    var sceneAsteroids = new ScrollMagic.Scene({triggerElement: "#asteroids", triggerHook: 0.9, duration: "150%"})
+            .setTween("#asteroids", {y: "-20%"})
+            .addTo(controller);
+</script>

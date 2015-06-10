@@ -14,6 +14,13 @@
 //= require jquery_ujs
 //= require foundation
 //= require turbolinks
+//
+// Bower packages
+//= require greensock/src/uncompressed/TweenMax
+//= require ScrollMagic/scrollmagic/uncompressed/ScrollMagic
+//= require ScrollMagic/scrollmagic/uncompressed/plugins/animation.gsap
+//= require ScrollMagic/scrollmagic/uncompressed/plugins/debug.addIndicators
+//
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
