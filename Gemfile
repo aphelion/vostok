@@ -3,6 +3,7 @@ ruby File.read('.ruby-version').strip
 
 gem 'rails', '4.2.1'
 gem 'sass-rails', '~> 5.0'
+gem 'foundation-rails'
 gem 'uglifier', '>= 2.7.1'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
