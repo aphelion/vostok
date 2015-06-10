@@ -1,2 +1,2 @@
-# aphelion.io
+# Vostok
 [*Aphelion Homepage*](http://aphelion.io/)
