@@ -1,0 +1,8 @@
+{
+  "name": "Vostok",
+  "private": true,
+  "dependencies": {
+    "ScrollMagic": "~2.0.5",
+    "greensock": "~1.17.0"
+  }
+}

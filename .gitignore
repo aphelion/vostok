@@ -18,3 +18,7 @@
 
 # Ignore IDE files.
 /.idea/
+
+# Ignore dependencies.
+/bower_components/
+/node_modules/

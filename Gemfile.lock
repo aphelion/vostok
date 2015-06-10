@@ -29,7 +29,7 @@ GEM
     activerecord (4.2.1)
       activemodel (= 4.2.1)
       activesupport (= 4.2.1)
-      arel (~> 6.0)
+      arel (~> 6.0)res
     activesupport (4.2.1)
       i18n (~> 0.7)
       json (~> 1.7, >= 1.7.7)
@@ -37,9 +37,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     ansi (1.5.0)
-    arel (6.0.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bower (0.0.5)
+      multi_json
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -199,6 +200,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bower
   byebug
   coffee-rails (~> 4.1.0)
   foundation-rails
