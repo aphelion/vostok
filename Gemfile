@@ -10,6 +10,7 @@ gem 'jquery-rails'
 gem 'bower'
 gem 'image_optim_pack'
 gem 'image_optim'
+gem 'piwik_analytics', '~> 1.0.2'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
